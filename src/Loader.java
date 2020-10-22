@@ -21,7 +21,7 @@ public class Loader {
         Cupboard cupboard1 = new Cupboard("Шкаф-купе Изабель", "Тёмный дуб", "Черный", "Америка", 100000, 5, 4, 5);
         Cupboard cupboard2 = new Cupboard("Угловой шкаф Том Нук", "Золото", "Блестящий", "остров Аврора", 4987, 6, 2, 4);
 
-        ArrayList<Furniture> catalog = new ArrayList<Furniture>();
+        ArrayList<Furniture> catalog = new ArrayList<>();
         catalog.add(desk1);
         catalog.add(desk2);
         catalog.add(bed1);
@@ -35,7 +35,7 @@ public class Loader {
         Shop.printCatalog(catalog);
 //первый вывод команд
         Shop.showCommand();
-        ArrayList<Furniture> basket = new ArrayList<Furniture>();
+        ArrayList<Furniture> basket = new ArrayList<>();
         while (true) {
             int command = in.nextInt();
             if (command == 1) { //добавить в корзину
